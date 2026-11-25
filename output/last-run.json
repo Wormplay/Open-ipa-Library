@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-24T03:10:02Z",
+  "updatedAt": "2026-11-25T03:17:37Z",
   "status": "partial",
   "sourcesProcessed": 3,
-  "sourcesOk": 1,
+  "sourcesOk": 0,
   "sourcesPartial": 0,
-  "sourcesError": 2,
-  "appsFound": 168,
-  "appsNormalized": 168,
+  "sourcesError": 3,
+  "appsFound": 0,
+  "appsNormalized": 0,
   "appsExportable": 0,
   "appsDropped": 0,
   "duplicatesRemoved": 0,
@@ -15,8 +15,12 @@
   "message": "No exportable apps (with download_url and availability=public). Existing catalog preserved.",
   "sourceErrors": [
     {
+      "sourceId": "my-playcover-feed",
+      "error": "HTTP 502 from https://open-ipa-library.vercel.app/api/source/decrypt-day"
+    },
+    {
       "sourceId": "decrypt-day",
-      "error": "HTTP 403 from https://decrypt.day/app/list"
+      "error": "HTTP 500 from https://decrypt.day/app/list"
     },
     {
       "sourceId": "armconverter",
